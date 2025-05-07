@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-import { JWT_SECRET } from "../configs/index";
+import { JWT_SECRET } from "../configs/index.js";
 
 const requireAuth = (req, res, next) => {
   const token = req.session?.jwt;
